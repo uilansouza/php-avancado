@@ -30,4 +30,4 @@ function sumRecursive($value) {
     return ($value) ? ($value + sumRecursive($value - 1)) : 0;
 }
 
-echo sumRecursive(1s);
+echo sumRecursive(s);
