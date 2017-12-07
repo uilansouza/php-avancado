@@ -26,8 +26,21 @@ echo sum(5);
 #------ Simplificando 
 
 
+echo '<br>Recursivamente now <br>';
+
+
 function sumRecursive($value) {
     return ($value) ? ($value + sumRecursive($value - 1)) : 0;
 }
 
-echo sumRecursive(1s);
+echo sumRecursive(10);
+
+echo '<br> Fatorial<br>';
+
+function fatorial($num){
+    
+ return($num)? $num * fatorial( $num -1): 1;
+     
+}
+echo fatorial(5);
+
