@@ -27,7 +27,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 <?php echo'<br>';
- var_dump(md5('Treinaweb')); echo'<br>';
- var_dump(sha1('Treinaweb'));
- var_dump( hash('sha512', "TreinaWeb") );
+  var_dump( hash('sha512', "TreinaWeb") );
  
