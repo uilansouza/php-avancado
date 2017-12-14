@@ -2,7 +2,7 @@
 echo "<h1> Treinaweb Cursos</h1>";
 
 // Inicia o buffer ( isso bloqueia qualquer saida para o navegador)
-ob_start();
+ob_start('ob_gzhandler');
 
 echo <<<TXT
 O Treinaweb é a principal esmpresa especializada em cursos online de tecnologia
