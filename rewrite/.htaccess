@@ -1,6 +1,7 @@
 <ifModule mod_rewrite.c>
     RewriteEngine On
-    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-f 
+# o -d referece caso seja arquivo. ( -d para diretórios)
     RewriteRule "^(.+)$" index.php?pagina=$1
     #RewriteRule "^search/(.+)/([0-9]{4})/(.+)$" index.php?cat=$1&date=$2&title=$3 [NC,L]
 </ifModule>
