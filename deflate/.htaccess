@@ -1,5 +1,5 @@
 <IfModule mod_deflate.c>
-    <FilesMatch "\.(php|js|css|html)$">
+    <FilesMatch "\.(php|js|css)$">
         SetOutputFilter DEFLATE
     </FilesMatch>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml 
