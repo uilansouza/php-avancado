@@ -142,3 +142,29 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
+
+.divisor {
+    position: relative;
+}
+.divisor .caixa {
+    position: relative;
+    width: 100px;
+    background: #cccccc; /* cinza */
+    border: 10px solid #ffffff; /* borda branca em volta */
+    margin: 0 auto; /* centraliza com bordas automáticas nas laterais */
+    text-align: center; /* centraliza o texto */
+    padding: 12px 0px; /* respiro em volta do texto */
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #666666; /* texto cinza escuro */ 
+    z-index: 2; /* na frente da linha */
+}
+
+.divisor:before {
+    position: absolute; /* posição relativa ao container */
+    top: 50%; /* posição vetical: bem na metade */
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #666666;
+    

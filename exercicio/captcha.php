@@ -1,3 +1,6 @@
+<?php
+require 'funcao/funcao.php';
+?>
 <!DOCTYPE html>
 
     <script type="text/javascript" src="js/arquivo.js"></script>
@@ -13,8 +16,8 @@
     <body>
        <div class="container">  
   <form id="contact" action="" method="post">
-    <h3>EXERCICIO </h3>
-    <h4>Informe seus dados</h4>
+    <center><h3>EXERCICIO </h3></center>
+     <h4>Informe seus dados</h4>
      <fieldset>
       <input placeholder="Your Email Address" type="email" tabindex="2" required>
     </fieldset>
@@ -25,6 +28,10 @@
     <fieldset>
       <button name="submit" type="submit" id="contact-submit" data-submit="...Logando">Login</button>
     </fieldset>
+     <div class="divisor">
+         <div class="caixa"><?php formulario();?> </div>
+    </div>
+     
     <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
   </form>
 </div>
