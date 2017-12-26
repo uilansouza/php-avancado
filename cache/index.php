@@ -40,4 +40,3 @@ $cachedFile = fopen($cacheFile, 'w');
 fwrite($cachedFile, ob_get_contents());
 fclose($cachedFile);
 ob_end_flush();
-?>

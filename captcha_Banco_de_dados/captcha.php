@@ -1,5 +1,6 @@
 <?php
 require 'funcao/funcao.php';
+validaGet();
 ?>
 <!DOCTYPE html>
 
@@ -15,7 +16,7 @@ require 'funcao/funcao.php';
     </head>
     <body>
        <div class="container">  
-  <form id="contact" action="" method="post">
+  <form id="contact" action="" method="get">
     <center><h3>EXERCICIO </h3></center>
      <h4>Informe seus dados</h4>
      <fieldset>
