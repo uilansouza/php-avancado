@@ -2,7 +2,7 @@
 
 $pdo = new PDO('mysql:dbname=phpavancado','root','');
 
-$login='email@teste.com';
+$login='emailteste2@teste.com';
 $senha='123456';
 
 $select = 'SELECT * FROM login WHERE email=?';

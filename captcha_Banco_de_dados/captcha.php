@@ -8,7 +8,7 @@ validaGet();
     <link rel="stylesheet" type="text/css" href="css/arquivo.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css"/>
-    <head>
+  
         <title>CAPTCHA</title>
     
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
@@ -30,7 +30,7 @@ validaGet();
       <button name="submit" type="submit" id="contact-submit" data-submit="...Logando">Login</button>
     </fieldset>
      <div class="divisor">
-         <div class="caixa"><?php formulario();?> </div>
+         <div class="caixa"><?= formulario();?> </div>
     </div>
      
     <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>

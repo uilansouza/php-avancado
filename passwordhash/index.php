@@ -2,7 +2,7 @@
 
 
 $pdo = new PDO('mysql:dbname=phpavancado','root','');
-$login ='email@teste.com';
+$login ='emailteste2@teste.com';
 $senha='123456';
 
 $senhaHash = password_hash($senha, PASSWORD_BCRYPT);
