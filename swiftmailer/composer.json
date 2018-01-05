@@ -1,0 +1,6 @@
+{
+    "name": "Meu Proj",
+    "require" : {
+        "swiftmailer/swiftmailer" : "~5.0"
+    }
+}

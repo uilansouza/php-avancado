@@ -1,0 +1,6 @@
+{
+    "name": "Treinaweb",
+    "require" : {
+        "pimple/pimple" : "~3.0"
+    }
+}

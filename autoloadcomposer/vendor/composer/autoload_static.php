@@ -4,44 +4,79 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit47d3c156060b26718067d37b56b55d6a
+class ComposerStaticInit5646ad067a3b029e824d63b6590d137c
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'Treinaweb\\' => 10,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
-            'Symfony\\Component\\Translation\\' => 30,
         ),
-        'C' => 
+        'R' => 
         array (
-            'Carbon\\' => 7,
+            'Respect\\Validation\\' => 19,
+            'Respect\\' => 8,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+        ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Treinaweb\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'Symfony\\Component\\Translation\\' => 
+        'Respect\\Validation\\' => 
         array (
-            0 => __DIR__ . '/..' . '/symfony/translation',
+            0 => __DIR__ . '/..' . '/respect/validation/library',
         ),
-        'Carbon\\' => 
+        'Respect\\' => 
         array (
-            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+            0 => __DIR__ . '/..' . '/respect/relational/library/Respect',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'R' => 
+        array (
+            'Respect\\Data' => 
+            array (
+                0 => __DIR__ . '/..' . '/respect/data/library',
+            ),
         ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit47d3c156060b26718067d37b56b55d6a::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit47d3c156060b26718067d37b56b55d6a::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit5646ad067a3b029e824d63b6590d137c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit5646ad067a3b029e824d63b6590d137c::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit5646ad067a3b029e824d63b6590d137c::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
